@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/LiveVideoPrayer.css">
+    <title>Live Video Prayer Site</title>
+</head>
+<body>
+    <div class="navbar">
+        
+        <div class="navbar_links">
+            <ul class="menu">
+                <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+                <li><a href="About.html" style="text-decoration: none;">About us</a></li>
+                <li><a href="VideoGallery.html" style="text-decoration: none;">Video Gallery</a></li>
+                <li><a href="LiveVideoPrayer.html" style="text-decoration: none;">Live Video Prayer</a></li>
+                <li><a href="ChatContactUs.html" style="text-decoration: none;">Chat Contact Us</a></li>
+            </ul>
+        </div>
+        </div>
+       
+            <script src='https://meet.jit.si/external_api.js'></script>
+          </head>
+          <body>
+          
+          <button id="start" type="button"><H1>View Your Work Live</H1></button>
+          <div id="jitsi-container">
+          </div>
+          
+          <script>
+          var button = document.querySelector('#start');
+          var container = document.querySelector('#jitsi-container');
+          var api = null;
+          
+          button.addEventListener('click', () => {
+              var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+              var stringLength = 30;
+          
+              function pickRandom() {
+              return possible[Math.floor(Math.random() * possible.length)];
+              }
+          
+          var randomString = Array.apply(null, Array(stringLength)).map(pickRandom).join('');
+          
+              var domain = "meet.jit.si";
+              var options = {
+                  "roomName": randomString,
+                  "parentNode": container,
+                  "width": 600,
+                  "height": 600,
+              };
+              api = new JitsiMeetExternalAPI(domain, options);
+          });
+          
+          </script>
+          <script>
+            (function(d,h,w){var gist=w.gist=w.gist||[];gist.methods=['trackPageView','identify','track','setAppId'];gist.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);gist.push(e);return gist;}};for(var i=0;i<gist.methods.length;i++){var c=gist.methods[i];gist[c]=gist.factory(c)}s=d.createElement('script'),s.src="https://widget.getgist.com",s.async=!0,e=d.getElementsByTagName(h)[0],e.appendChild(s),s.addEventListener('load',function(e){},!1),gist.setAppId("tdsauycj"),gist.trackPageView()})(document,'head',window);
+        </script>
+        <!-- end Gist JS code-->
+          </body>
+          </html>
+    

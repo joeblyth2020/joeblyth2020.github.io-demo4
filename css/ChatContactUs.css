@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    
+    
+}
+
+
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    height: 70px;
+    line-height: 70px; 
+    background: rgb(8, 8, 8); 
+    border-bottom: 2px snow;
+}
+
+ 
+ /* this is for ul tag*/
+ .menu{
+     float: right;
+     background:none;
+ }
+ .menu li{
+     float: left;
+     width: 100px;
+     height:70px;
+     line-height: 70px;
+     text-align: center;
+     list-style: none;
+
+ }
+ .menu li a {
+     color: rgb(252, 246, 246);
+     text-decoration-style: none;
+     font-family: calibri;
+     text-transform: uppercase;
+     display: block;
+
+ }
+ .menu li:hover{
+     background:#837f7f;
+ }
+
+ body{
+    background: url("../img/biblestudy.jpg") no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding:0;
+ }
+ .contact-title {
+    margin-top: 100px;
+    position: right;
+    color:white;
+    text-transform: capitalize;
+    transition: all 4s ease-in-out;
+}
+.contact-title h1{
+    font-size: 32px;
+    line-height: 10px;
+
+}
+.contact-title h4{
+    font-size: 14px;
+}
+form{
+    margin-top: 50px;
+    transition:all 4s ease-in-out;
+}
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    color:#ffff;
+    font-size: 18px;
+    margin-bottom: 16px;
+
+}
+input{
+    height:35px;
+}
+form .submit{
+    background: #363535;
+    border-color: transparent;
+    color:#fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height:50px;
+    margin-top: 10px;
+
+}
+form.submit:hover{
+    background-color:#363535;
+    cursor: pointer;
+}
+
+
+ 
