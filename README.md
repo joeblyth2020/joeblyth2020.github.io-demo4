@@ -29,7 +29,7 @@ Feel free to explore, modify, or contribute to this project!
 
 ## Credits
 
-This website was created by [Your Name] and is maintained by [Your Name].
+This website was created by Joseph Blythe and is maintained by Joseph Blythe.
 
 ## License
 
